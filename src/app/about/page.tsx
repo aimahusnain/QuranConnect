@@ -22,7 +22,7 @@ export default function AboutUsPage() {
   const [activeTeamMember, setActiveTeamMember] = useState(0)
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-green-900 via-emerald-800 to-teal-700 text-white">
+    <main className="min-h-screen bg-gradient-to-br from-green-900 via-emerald-800 to-teal-700 text-white pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-16 animate-fade-in-down">
           <h1 className="text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-300 via-emerald-400 to-teal-300">About Us</h1>
@@ -77,7 +77,7 @@ export default function AboutUsPage() {
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-400"></div>
             {milestones.map((milestone, index) => (
               <div key={index} className={`flex items-center mb-8 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                <div className={`bg-green-800 bg-opacity-30 backdrop-filter backdrop-blur-lg rounded-lg p-6 w-full md:w-1/2 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'} border border-green-600`}>
+                <div className={`bg-green-800 sm:z-0 z-10 bg-opacity-30 backdrop-filter backdrop-blur-lg rounded-lg p-6 w-full md:w-1/2 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'} border border-green-600`}>
                   <h3 className="text-2xl font-bold mb-2 text-green-300">{milestone.year}</h3>
                   <p className="text-lg">{milestone.event}</p>
                 </div>

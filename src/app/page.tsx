@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/islamic-pattern.png')] opacity-10"></div>
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-6xl font-bold mb-6 animate-fade-in-down">
+            <h1 className="sm:text-6xl text-5xl font-bold mb-6 animate-fade-in-down">
               QuranConnect
               <span className="block text-2xl mt-2 font-normal">
                 Online Academy
@@ -25,10 +25,10 @@ export default function Home() {
               your home
             </p>
             <div className="flex justify-center space-x-4">
-              <button className="bg-amber-400 text-emerald-800 font-bold py-3 px-8 rounded-full hover:bg-amber-300 transition duration-300 transform hover:scale-105 shadow-lg">
+              <button className="bg-amber-400 text-emerald-800 font-bold py-3 sm:px-8 px-4 rounded-full hover:bg-amber-300 transition duration-300 transform hover:scale-105 shadow-lg">
                 Book Your Free Trial
               </button>
-              <button className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-emerald-600 transition duration-300 transform hover:scale-105">
+              <button className="bg-transparent border-2 border-white text-white font-bold py-3 sm:px-8 px-4 rounded-full hover:bg-white hover:text-emerald-600 transition duration-300 transform hover:scale-105">
                 Contact Us
               </button>
             </div>
