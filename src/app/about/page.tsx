@@ -91,7 +91,7 @@ export default function AboutUsPage() {
           <h2 className="text-3xl font-bold mb-8 text-center text-green-300">Join Our Community</h2>
           <div className="bg-green-800 bg-opacity-30 backdrop-filter backdrop-blur-lg rounded-lg p-8 text-center border border-green-600">
             <p className="text-xl mb-6">
-              Embark on a transformative journey of Islamic learning with us. Together, let's explore the richness of our faith and cultivate a brighter future.
+              Embark on a transformative journey of Islamic learning with us. Together, let&apos;s explore the richness of our faith and cultivate a brighter future.
             </p>
             <button className="bg-gradient-to-r from-green-400 to-emerald-500 text-green-900 font-bold py-3 px-8 rounded-full hover:from-emerald-500 hover:to-green-400 transition duration-300 transform hover:scale-105">
               Start Your Journey

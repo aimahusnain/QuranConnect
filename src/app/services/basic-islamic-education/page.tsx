@@ -34,7 +34,7 @@ export default function BasicIslamicEducationPage() {
           <div className="animate-fade-in">
             <h2 className="text-3xl font-bold mb-6">Discover the Beauty of Islam</h2>
             <p className="mb-4">
-              Our Basic Islamic Education course is designed to provide a comprehensive introduction to the core principles and practices of Islam. Whether you're new to the faith or seeking to deepen your understanding, this course offers a solid foundation in Islamic knowledge.
+              Our Basic Islamic Education course is designed to provide a comprehensive introduction to the core principles and practices of Islam. Whether you&apos;re new to the faith or seeking to deepen your understanding, this course offers a solid foundation in Islamic knowledge.
             </p>
             <p className="mb-4">
               Explore the rich tapestry of Islamic teachings, from foundational beliefs to practical worship, and gain insights into the historical and contemporary contexts of the faith.

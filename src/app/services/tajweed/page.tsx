@@ -37,7 +37,7 @@ export default function TajweedCoursePage() {
               Tajweed is the art of reciting the Quran with precision and beauty. Our course is designed to help you master the rules of Tajweed, enhancing your connection with the divine words.
             </p>
             <p className="mb-4">
-              Through expert instruction and guided practice, you'll learn to recite with confidence, clarity, and melodious perfection.
+              Through expert instruction and guided practice, you&apos;ll learn to recite with confidence, clarity, and melodious perfection.
             </p>
             <div className="mt-8">
               <Link href="/enroll-tajweed" className="bg-white text-purple-700 font-bold py-3 px-6 rounded-full hover:bg-purple-100 transition duration-300">

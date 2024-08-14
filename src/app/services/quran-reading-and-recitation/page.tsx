@@ -30,10 +30,10 @@ export default function QuranReadingRecitationPage() {
           <div className="animate-fade-in">
             <h2 className="text-3xl font-bold mb-6">About the Course</h2>
             <p className="mb-4">
-              Our Quran Reading & Recitation course is designed to help you read the Quran with accuracy, fluency, and beauty. Whether you're a beginner or looking to improve your recitation, this course caters to all levels.
+              Our Quran Reading & Recitation course is designed to help you read the Quran with accuracy, fluency, and beauty. Whether you&apos;re a beginner or looking to improve your recitation, this course caters to all levels.
             </p>
             <p className="mb-4">
-              Under the guidance of expert Qaris, you'll learn proper pronunciation, Tajweed rules, and the art of melodious recitation. Our interactive online classes ensure personalized attention and continuous improvement.
+              Under the guidance of expert Qaris, you&apos;ll learn proper pronunciation, Tajweed rules, and the art of melodious recitation. Our interactive online classes ensure personalized attention and continuous improvement.
             </p>
             <div className="mt-8">
               <Link href="/pricing" className="bg-white text-blue-700 font-bold py-3 px-6 rounded-full hover:bg-blue-100 transition duration-300">
@@ -105,11 +105,11 @@ export default function QuranReadingRecitationPage() {
           <h2 className="text-3xl font-bold mb-8 text-center">Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white text-blue-800 rounded-lg shadow-lg p-6">
-              <p className="italic mb-4">"This course transformed my Quran recitation. The teachers are patient and knowledgeable, and the interactive sessions are incredibly helpful."</p>
+              <p className="italic mb-4">&quot;This course transformed my Quran recitation. The teachers are patient and knowledgeable, and the interactive sessions are incredibly helpful.&quot;</p>
               <p className="font-semibold">- Sarah, Intermediate Level Student</p>
             </div>
             <div className="bg-white text-blue-800 rounded-lg shadow-lg p-6">
-              <p className="italic mb-4">"I started as a complete beginner, and now I can read the Quran with proper Tajweed. The step-by-step approach and regular practice sessions made all the difference."</p>
+              <p className="italic mb-4">&quot;I started as a complete beginner, and now I can read the Quran with proper Tajweed. The step-by-step approach and regular practice sessions made all the difference.&quot;</p>
               <p className="font-semibold">- Ahmed, Beginner Level Graduate</p>
             </div>
           </div>

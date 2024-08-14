@@ -153,7 +153,7 @@ export default function Home() {
               >
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center">
-                    <span className="text-4xl text-emerald-700">"</span>
+                    <span className="text-4xl text-emerald-700">&quot;</span>
                   </div>
                 </div>
                 <p className="text-gray-600 italic mb-6 mt-8">

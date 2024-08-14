@@ -37,7 +37,7 @@ export default function NooraniQaidaPage() {
               Noorani Qaida is the essential first step in your Quranic learning journey. This course is designed to build a strong foundation in Arabic reading, enabling you to approach the Quran with confidence.
             </p>
             <p className="mb-4">
-              Through interactive lessons and expert guidance, you'll master the Arabic alphabet, learn proper pronunciation, and begin reading simple Quranic words and phrases.
+              Through interactive lessons and expert guidance, you&apos;ll master the Arabic alphabet, learn proper pronunciation, and begin reading simple Quranic words and phrases.
             </p>
             <div className="mt-8">
               <Link href="/pricing" className="bg-white text-green-700 font-bold py-3 px-6 rounded-full hover:bg-green-100 transition duration-300">

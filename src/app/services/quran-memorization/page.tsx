@@ -34,10 +34,10 @@ export default function QuranMemorizationPage() {
           <div className="animate-fade-in">
             <h2 className="text-3xl font-bold mb-6">Become a Hafiz</h2>
             <p className="mb-4">
-              Our Quran Memorization (Hifz) program is designed to guide you through the noble pursuit of committing the entire Quran to memory. With expert instruction and a supportive community, you'll develop the skills and discipline needed for this sacred journey.
+              Our Quran Memorization (Hifz) program is designed to guide you through the noble pursuit of committing the entire Quran to memory. With expert instruction and a supportive community, you&apos;ll develop the skills and discipline needed for this sacred journey.
             </p>
             <p className="mb-4">
-              Whether you're just starting or looking to complete your memorization, our structured approach caters to all levels and learning paces.
+              Whether you&apos;re just starting or looking to complete your memorization, our structured approach caters to all levels and learning paces.
             </p>
             <div className="mt-8">
               <Link href="/enroll-hifz" className="bg-white text-blue-700 font-bold py-3 px-6 rounded-full hover:bg-blue-100 transition duration-300">

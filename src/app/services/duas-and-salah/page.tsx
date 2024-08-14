@@ -34,7 +34,7 @@ export default function DuasAndSalahPage() {
           <div className="animate-fade-in">
             <h2 className="text-3xl font-bold mb-6">Strengthen Your Spiritual Practice</h2>
             <p className="mb-4">
-              Our Duas and Salah course is designed to deepen your understanding and improve your practice of daily prayers and supplications. Whether you're new to Islam or looking to enhance your existing knowledge, this course offers comprehensive guidance.
+              Our Duas and Salah course is designed to deepen your understanding and improve your practice of daily prayers and supplications. Whether you&apos;re new to Islam or looking to enhance your existing knowledge, this course offers comprehensive guidance.
             </p>
             <p className="mb-4">
               Learn the proper methods of performing salah, understand the meanings behind your prayers, and memorize essential duas to enrich your daily spiritual life.

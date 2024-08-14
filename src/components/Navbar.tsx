@@ -18,8 +18,9 @@ interface NavItemProps {
   icon: React.ElementType;
   text: string;
   isActive: boolean;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;  // Updated to accept an event
   hasDropdown?: boolean;
+  href?: string;
 }
 
 interface Service {
@@ -67,8 +68,10 @@ const NavItem: React.FC<NavItemProps> = ({
   isActive,
   onClick,
   hasDropdown,
+  href,
 }) => (
-  <motion.button
+  <motion.a
+    href={href}
     className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-colors duration-200 ${
       isActive
         ? "bg-green-500 text-white"
@@ -82,7 +85,7 @@ const NavItem: React.FC<NavItemProps> = ({
     <span>{text}</span>
     {hasDropdown &&
       (isActive ? <ChevronUp size={16} /> : <ChevronDown size={16} />)}
-  </motion.button>
+  </motion.a>
 );
 
 const ServicesDropdown: React.FC = () => (
@@ -110,9 +113,27 @@ const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [activeItem, setActiveItem] = useState<string | null>(null);
-  const [showServicesDropdown, setShowServicesDropdown] = useState<boolean>(false);
+  const [showServicesDropdown, setShowServicesDropdown] =
+    useState<boolean>(false);
 
-  const menuItems = ["Courses", "About", "Services", "Pricing", "Contact"];
+  const menuItems = [
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Services",
+      link: undefined, // Removed the link for Services
+    },
+    {
+      name: "Pricing",
+      link: "/pricing",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -134,21 +155,22 @@ const NavBar: React.FC = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (showServicesDropdown && !(event.target as Element).closest('.services-dropdown')) {
+      if (
+        showServicesDropdown &&
+        !(event.target as Element).closest(".services-dropdown")
+      ) {
         setShowServicesDropdown(false);
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [showServicesDropdown]);
 
   const getIcon = (item: string): React.ElementType => {
     switch (item) {
-      case "Courses":
-        return Book;
       case "About":
         return Users;
       case "Services":
@@ -194,23 +216,25 @@ const NavBar: React.FC = () => {
             </motion.a>
             <div className="hidden lg:flex items-center space-x-1">
               {menuItems.map((item) => (
-                <div key={item} className="relative services-dropdown">
+                <div key={item.name} className="relative services-dropdown">
                   <NavItem
-                    icon={getIcon(item)}
-                    text={item}
-                    isActive={activeItem === item}
-                    onClick={() => {
-                      if (item === "Services") {
+                    href={item.link}
+                    icon={getIcon(item.name)}
+                    text={item.name}
+                    isActive={activeItem === item.name}
+                    onClick={(e: any) => {
+                      if (item.name === "Services") {
+                        e.preventDefault(); // Prevent default link behavior
                         setShowServicesDropdown(!showServicesDropdown);
                         setActiveItem(showServicesDropdown ? null : "Services");
                       } else {
-                        setActiveItem(item);
+                        setActiveItem(item.name);
                         setShowServicesDropdown(false);
                       }
                     }}
-                    hasDropdown={item === "Services"}
+                    hasDropdown={item.name === "Services"}
                   />
-                  {item === "Services" && showServicesDropdown && (
+                  {item.name === "Services" && showServicesDropdown && (
                     <ServicesDropdown />
                   )}
                 </div>
@@ -256,29 +280,33 @@ const NavBar: React.FC = () => {
               <div className="flex items-center justify-between p-8"></div>
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {menuItems.map((item) => (
-                  <React.Fragment key={item}>
+                  <React.Fragment key={item.name}>
                     <NavItem
-                      icon={getIcon(item)}
-                      text={item}
-                      isActive={activeItem === item}
-                      onClick={() => {
-                        if (item === "Services") {
+                      href={item.link}
+                      icon={getIcon(item.name)}
+                      text={item.name}
+                      isActive={activeItem === item.name}
+                      onClick={(e) => {
+                        if (item.name === "Services") {
+                          e.preventDefault(); // Prevent default link behavior
                           setShowServicesDropdown(!showServicesDropdown);
-                          setActiveItem(showServicesDropdown ? null : "Services");
+                          setActiveItem(
+                            showServicesDropdown ? null : "Services"
+                          );
                         } else {
-                          setActiveItem(item);
+                          setActiveItem(item.name);
                           setShowServicesDropdown(false);
                           setIsOpen(false);
                         }
                       }}
-                      hasDropdown={item === "Services"}
+                      hasDropdown={item.name === "Services"}
                     />
-                    {item === "Services" && showServicesDropdown && (
+                    {item.name === "Services" && showServicesDropdown && (
                       <div className="pl-4 space-y-1">
                         {services.map((service, index) => (
                           <motion.a
                             key={index}
-                            href={`/services/${service.link}`}
+                            href={service.link}
                             className="block px-4 py-2 text-sm text-green-100 hover:bg-green-700 hover:text-white rounded-md"
                             whileHover={{ x: 5 }}
                             onClick={() => setIsOpen(false)}
