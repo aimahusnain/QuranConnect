@@ -258,7 +258,7 @@ const NavBar: React.FC = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 z-40 lg:hidden"
+            className="fixed inset-0 z-50 lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -277,7 +277,25 @@ const NavBar: React.FC = () => {
               exit={{ x: "100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
-              <div className="flex items-center justify-between p-8"></div>
+              <div className="flex items-center justify-between p-8"><motion.a
+              href="/"
+              className="flex items-center space-x-2 text-white font-bold text-lg"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <svg
+                className="h-10 w-10"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7v-2z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span className="text-2xl">QuranLearn</span>
+            </motion.a></div>
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {menuItems.map((item) => (
                   <React.Fragment key={item.name}>
