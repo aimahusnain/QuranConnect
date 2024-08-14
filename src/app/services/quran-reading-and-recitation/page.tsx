@@ -23,7 +23,7 @@ export default function QuranReadingRecitationPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-16 animate-fade-in-down">
           <h1 className="text-5xl font-extrabold mb-4">Quran Reading & Recitation Course</h1>
-          <p className="text-xl mb-8">Perfect your Quranic recitation and deepen your connection with Allah's words</p>
+          <p className="text-xl mb-8">Perfect your Quranic recitation and deepen your connection with Allah&apos;s words</p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
