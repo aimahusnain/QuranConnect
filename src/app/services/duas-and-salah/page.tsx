@@ -47,7 +47,7 @@ export default function DuasAndSalahPage() {
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl animate-fade-in">
             <Image
-              src="/duas-salah-illustration.jpg"
+              src="/prayer.jpg"
               alt="Duas and Salah Illustration"
               layout="fill"
               objectFit="cover"

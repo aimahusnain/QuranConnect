@@ -40,7 +40,7 @@ export default function TajweedCoursePage() {
               Through expert instruction and guided practice, you&apos;ll learn to recite with confidence, clarity, and melodious perfection.
             </p>
             <div className="mt-8">
-              <Link href="/enroll-tajweed" className="bg-white text-[#2BA060] font-bold py-3 px-6 rounded-full hover:bg-purple-100 transition duration-300">
+              <Link href="/enroll-tajweed" className="bg-white text-[#1E40AF] font-bold py-3 px-6 rounded-full hover:bg-purple-100 transition duration-300">
                 Begin Your Journey
               </Link>
             </div>

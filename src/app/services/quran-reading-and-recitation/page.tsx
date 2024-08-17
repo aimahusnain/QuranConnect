@@ -55,7 +55,7 @@ export default function QuranReadingRecitationPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {courseFeatures.map((feature, index) => (
               <div key={index} className="bg-white text-blue-800 rounded-lg p-6 shadow-lg transform transition duration-500 hover:scale-105">
-                <svg className="w-8 h-8 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-8 h-8 mb-4 text-[#2BA060]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <h3 className="text-xl font-semibold mb-2">{feature}</h3>

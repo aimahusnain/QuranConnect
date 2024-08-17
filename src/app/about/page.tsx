@@ -55,7 +55,7 @@ export default function AboutUsPage() {
                 <Image
                   src={member.image}
                   alt={member.name}
-                  width={200}
+                  width={290}
                   height={200}
                   className="rounded-lg"
                 />

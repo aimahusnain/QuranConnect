@@ -47,7 +47,7 @@ export default function QuranMemorizationPage() {
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl animate-fade-in">
             <Image
-              src="/hifz-illustration.jpg"
+              src="/quranmemo.jpg"
               alt="Quran Memorization Illustration"
               layout="fill"
               objectFit="cover"
@@ -60,7 +60,7 @@ export default function QuranMemorizationPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white text-blue-800 rounded-lg p-6 shadow-lg transform transition duration-500 hover:scale-105">
-                <svg className="w-8 h-8 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-8 h-8 mb-4 text-[#2BA060]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <h3 className="text-xl font-semibold mb-2">{feature}</h3>
@@ -75,7 +75,7 @@ export default function QuranMemorizationPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {syllabus.map((item, index) => (
                 <div key={index} className="flex items-center">
-                  <div className="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                  <div className="bg-[#2BA060] text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
                     {item.phase}
                   </div>
                   <p className="font-semibold">{item.topic}</p>

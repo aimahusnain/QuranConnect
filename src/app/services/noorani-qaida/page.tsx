@@ -47,7 +47,7 @@ export default function NooraniQaidaPage() {
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl animate-fade-in">
             <Image
-              src="/noorani-qaida-illustration.jpg"
+              src="/nooraniqaida.jpg"
               alt="Noorani Qaida Illustration"
               layout="fill"
               objectFit="cover"
