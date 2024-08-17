@@ -22,7 +22,7 @@ export default function AboutUsPage() {
   const [activeTeamMember, setActiveTeamMember] = useState(0)
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-green-900 via-emerald-800 to-teal-700 text-white pt-20">
+    <main className="min-h-screen bg-gradient-to-br from-green-600 via-emerald-600 to-teal-500 text-white pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-16 animate-fade-in-down">
           <h1 className="text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-300 via-emerald-400 to-teal-300">About Us</h1>

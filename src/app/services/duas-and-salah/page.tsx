@@ -23,7 +23,7 @@ const syllabus = [
 
 export default function DuasAndSalahPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br pt-24 from-amber-500 via-orange-400 to-rose-300 text-white">
+    <main className="min-h-screen bg-gradient-to-br pt-24 from-[#095D41] via-[#288D74] to-blue-500 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-16 animate-fade-in-down">
           <h1 className="text-5xl font-extrabold mb-4">Duas and Salah Course</h1>
@@ -40,7 +40,7 @@ export default function DuasAndSalahPage() {
               Learn the proper methods of performing salah, understand the meanings behind your prayers, and memorize essential duas to enrich your daily spiritual life.
             </p>
             <div className="mt-8">
-              <Link href="/enroll-duas-salah" className="bg-white text-amber-700 font-bold py-3 px-6 rounded-full hover:bg-amber-100 transition duration-300">
+              <Link href="/enroll-duas-salah" className="bg-white text-[#304FB5] font-bold py-3 px-6 rounded-full hover:bg-[#b8c5ee] transition duration-300">
                 Enrich Your Prayers
               </Link>
             </div>
@@ -59,8 +59,8 @@ export default function DuasAndSalahPage() {
           <h2 className="text-3xl font-bold mb-8 text-center">Course Highlights</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white text-amber-800 rounded-lg p-6 shadow-lg transform transition duration-500 hover:scale-105">
-                <svg className="w-8 h-8 mb-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div key={index} className="bg-white text-[#304FB5] rounded-lg p-6 shadow-lg transform transition duration-500 hover:scale-105">
+                <svg className="w-8 h-8 mb-4 text-[#2ba060]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                 </svg>
                 <h3 className="text-xl font-semibold mb-2">{feature}</h3>
@@ -71,11 +71,11 @@ export default function DuasAndSalahPage() {
 
         <section className="mb-16 animate-fade-in">
           <h2 className="text-3xl font-bold mb-8 text-center">Course Modules</h2>
-          <div className="bg-white text-amber-800 rounded-lg shadow-lg p-8">
+          <div className="bg-white text-[#304FB5] rounded-lg shadow-lg p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {syllabus.map((item, index) => (
                 <div key={index} className="flex items-center">
-                  <div className="bg-amber-600 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                  <div className="bg-[#2BA060] text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
                     {item.module}
                   </div>
                   <p className="font-semibold">{item.topic}</p>
@@ -87,7 +87,7 @@ export default function DuasAndSalahPage() {
 
         <section className="mb-16 animate-fade-in">
           <h2 className="text-3xl font-bold mb-8 text-center">Our Teaching Approach</h2>
-          <div className="bg-white text-amber-800 rounded-lg shadow-lg p-8">
+          <div className="bg-white text-[#304FB5] rounded-lg shadow-lg p-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-6 md:mb-0 md:mr-8">
                 <h3 className="text-2xl font-bold mb-4">Interactive Learning</h3>
@@ -108,7 +108,7 @@ export default function DuasAndSalahPage() {
         <div className="text-center animate-fade-in">
           <h2 className="text-3xl font-bold mb-4">Elevate Your Spiritual Connection</h2>
           <p className="mb-8">Join our Duas and Salah course to transform your daily prayers and supplications.</p>
-          <Link href="/free-salah-assessment" className="bg-white text-amber-700 font-bold py-3 px-6 rounded-full hover:bg-amber-100 transition duration-300 mr-4">
+          <Link href="/free-salah-assessment" className="bg-white text-[#304FB5] font-bold py-3 px-6 rounded-full hover:bg-amber-100 transition duration-300 mr-4">
             Free Salah Assessment
           </Link>
           <Link href="/duas-salah-programs" className="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-amber-700 transition duration-300">

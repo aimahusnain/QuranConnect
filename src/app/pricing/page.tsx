@@ -92,7 +92,7 @@ export default function PricingPage() {
   const [currency, setCurrency] = useState('USD');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-900 via-green-800 to-emerald-700 py-20 text-white">
+    <div className="min-h-screen bg-gradient-to-br  from-green-600 via-emerald-600 to-teal-500 py-20 text-white">
       <div className="container mx-auto px-4">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}

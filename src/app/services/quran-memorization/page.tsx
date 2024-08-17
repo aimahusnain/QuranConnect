@@ -23,7 +23,7 @@ const syllabus = [
 
 export default function QuranMemorizationPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br pt-24 from-blue-600 via-teal-500 to-green-400 text-white">
+    <main className="min-h-screen bg-gradient-to-br pt-24 from-[#095D41] via-[#288D74] to-blue-500 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-16 animate-fade-in-down">
           <h1 className="text-5xl font-extrabold mb-4">Quran Memorization (Hifz)</h1>
