@@ -23,7 +23,7 @@ const syllabus = [
 
 export default function NooraniQaidaPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br pt-24 from-green-600 via-green-500 to-emerald-400 text-white">
+    <main className="min-h-screen bg-gradient-to-br pt-24 from-[#095D41] via-[#288D74] to-blue-500 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-16 animate-fade-in-down">
           <h1 className="text-5xl font-extrabold mb-4">Noorani Qaida Course</h1>
@@ -47,7 +47,7 @@ export default function NooraniQaidaPage() {
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl animate-fade-in">
             <Image
-              src="/noorani-qaida-illustration.jpg"
+              src="/nooraniqaida.jpg"
               alt="Noorani Qaida Illustration"
               layout="fill"
               objectFit="cover"
@@ -59,7 +59,7 @@ export default function NooraniQaidaPage() {
           <h2 className="text-3xl font-bold mb-8 text-center">Course Features</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white text-green-800 rounded-lg p-6 shadow-lg transform transition duration-500 hover:scale-105">
+              <div key={index} className="bg-white text-[#304FB5] rounded-lg p-6 shadow-lg transform transition duration-500 hover:scale-105">
                 <svg className="w-8 h-8 mb-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
@@ -71,7 +71,7 @@ export default function NooraniQaidaPage() {
 
         <section className="mb-16 animate-fade-in">
           <h2 className="text-3xl font-bold mb-8 text-center">Course Syllabus</h2>
-          <div className="bg-white text-green-800 rounded-lg shadow-lg p-8">
+          <div className="bg-white text-[#304FB5] rounded-lg shadow-lg p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {syllabus.map((item, index) => (
                 <div key={index} className="flex items-center">
@@ -87,7 +87,7 @@ export default function NooraniQaidaPage() {
 
         <section className="mb-16 animate-fade-in">
           <h2 className="text-3xl font-bold mb-8 text-center">Learning Approach</h2>
-          <div className="bg-white text-green-800 rounded-lg shadow-lg p-8">
+          <div className="bg-white text-[#304FB5] rounded-lg shadow-lg p-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-6 md:mb-0 md:mr-8">
                 <h3 className="text-2xl font-bold mb-4">Interactive Online Classes</h3>

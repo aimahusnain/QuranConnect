@@ -36,17 +36,17 @@ export default function Contact() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-amber-50 to-amber-100 py-16 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-r from-emerald-600 to-teal-500 transform -skew-y-6"></div>
+      <div className="absolute top-[-30px] left-0 w-full h-48 bg-gradient-to-r from-emerald-600 to-teal-500 transform -skew-y-6"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-amber-300 rounded-full opacity-50 transform translate-x-1/2 translate-y-1/2"></div>
-      <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-emerald-300 rounded-full opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute top-1/6 left-1/4 w-32 h-32 bg-emerald-300 rounded-full opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 mt-6 relative z-10">
         <h1 className="text-5xl font-bold text-center text-white mb-16 shadow-text">Contact Us</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="bg-white bg-opacity-90 rounded-lg shadow-xl p-8 transform hover:scale-105 transition duration-300">
-            <h2 className="text-3xl font-semibold text-emerald-700 mb-8 flex items-center">
+            <h2 className="text-3xl font-semibold mt-6 text-emerald-700 mb-8 flex items-center">
               <FaQuran className="mr-3 text-amber-500" />
               Get in Touch
             </h2>

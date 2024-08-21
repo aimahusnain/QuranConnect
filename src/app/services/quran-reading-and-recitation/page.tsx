@@ -19,13 +19,12 @@ const courseLevels = [
 
 export default function QuranReadingRecitationPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br pt-24 from-blue-600 via-blue-500 to-indigo-400 text-white">
+    <main className="min-h-screen bg-gradient-to-br pt-24 from-[#095D41] via-[#288D74] to-blue-500 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-16 animate-fade-in-down">
           <h1 className="text-5xl font-extrabold mb-4">Quran Reading & Recitation Course</h1>
           <p className="text-xl mb-8">Perfect your Quranic recitation and deepen your connection with Allah&apos;s words</p>
         </header>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div className="animate-fade-in">
             <h2 className="text-3xl font-bold mb-6">About the Course</h2>
@@ -56,7 +55,7 @@ export default function QuranReadingRecitationPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {courseFeatures.map((feature, index) => (
               <div key={index} className="bg-white text-blue-800 rounded-lg p-6 shadow-lg transform transition duration-500 hover:scale-105">
-                <svg className="w-8 h-8 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-8 h-8 mb-4 text-[#2BA060]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <h3 className="text-xl font-semibold mb-2">{feature}</h3>
