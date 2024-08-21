@@ -61,27 +61,27 @@ const getCurrencySymbol = (curr: any) => {
     default: return '$';
   }
 };
-
+// {`relative overflow-hidden rounded-3xl p-8 ${
+//   isSpecial ? 'bg-gradient-to-br from-green-700 to-emerald-500' : 'bg-gradient-to-br from-green-500 to-emerald-300'
+// } text-white shadow-xl`}
 const PlanCard = ({ plan, currency, isSpecial }: any) => {
   const Icon = plan.icon;
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className={`relative overflow-hidden rounded-3xl p-8 ${
-        isSpecial ? 'bg-gradient-to-br from-green-700 to-emerald-500' : 'bg-gradient-to-br from-green-500 to-emerald-300'
-      } text-white shadow-xl`}
+      className="relative overflow-hidden rounded-3xl p-8 h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 shadow-xl "
     >
       <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-white opacity-10"></div>
-      <Icon className="mb-4 h-12 w-12 text-green-100" />
-      <h3 className="mb-2 text-2xl font-bold">{plan.name}</h3>
-      <p className="mb-1 text-sm opacity-80">{plan.duration} Class</p>
+      <Icon className="mb-4 h-12 w-12 text-green-100 " />
+      <h3 className="mb-4 text-2xl font-bold">{plan.name}</h3>
+      <p className="mb-4 text-sm opacity-80">{plan.duration} Class</p>
       <p className="mb-4 text-sm opacity-80">{plan.type}</p>
-      <div className="mb-6 text-4xl font-bold">
+      <div className="mb-4 text-4xl font-bold">
         {getCurrencySymbol(currency)}
         {plan.prices[currency]}
         <span className="text-lg font-normal">/month</span>
       </div>
-      <button className="w-full rounded-full bg-white bg-opacity-20 py-2 px-4 font-semibold text-white transition duration-300 hover:bg-opacity-30">
+      <button className="w-full rounded-full  bg-white bg-opacity-20 py-2 px-7 font-semibold text-white transition duration-300 hover:bg-opacity-30">
         Choose Plan
       </button>
     </motion.div>
@@ -127,7 +127,7 @@ export default function PricingPage() {
 
         <div className="mb-20">
           <h2 className="mb-8 text-center text-3xl font-semibold">Regular Plans</h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
             {pricingPlans.map((plan, index) => (
               <PlanCard key={index} plan={plan} currency={currency} isSpecial={false} />
             ))}
