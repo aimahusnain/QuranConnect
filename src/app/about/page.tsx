@@ -47,8 +47,8 @@ export default function AboutUsPage() {
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className={`cursor-pointer transition-all duration-300 transform ${
-                  activeTeamMember === index ? 'scale-105 ring-4 ring-green-400' : 'hover:scale-105'
+                className={`cursor-pointer transition-all duration-300 transform  ${
+                  activeTeamMember === index ?  null:'hover:scale-105'
                 }`}
                 onClick={() => setActiveTeamMember(index)}
               >
