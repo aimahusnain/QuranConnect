@@ -61,15 +61,13 @@ const getCurrencySymbol = (curr: any) => {
     default: return '$';
   }
 };
-// {`relative overflow-hidden rounded-3xl p-8 ${
-//   isSpecial ? 'bg-gradient-to-br from-green-700 to-emerald-500' : 'bg-gradient-to-br from-green-500 to-emerald-300'
-// } text-white shadow-xl`}
+
 const PlanCard = ({ plan, currency, isSpecial }: any) => {
   const Icon = plan.icon;
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="relative overflow-hidden rounded-3xl p-8 h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 shadow-xl "
+      className="relative overflow-hidden rounded-3xl p-8 h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 shadow-xl "
     >
       <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-white opacity-10"></div>
       <Icon className="mb-4 h-12 w-12 text-green-100 " />
@@ -115,10 +113,10 @@ export default function PricingPage() {
           <select
             value={currency}
             onChange={(e) => setCurrency(e.target.value)}
-            className="rounded-full bg-white bg-opacity-20 py-2 px-4 font-semibold text-white"
+            className="rounded-full bg-white bg-opacity-40 py-2 px-4 font-semibold text-white"
           >
             {currencies.map((curr) => (
-              <option key={curr} value={curr} className="bg-green-700">
+              <option key={curr} value={curr} className="bg-green-400">
                 {curr}
               </option>
             ))}
